@@ -1,7 +1,7 @@
 # 명명된 함수 표현식(Named function expressions)을 까발린다
 
-<http://kangax.github.io/nfe/> 를 번역한 글입니다.
-<http://Hyeong-jin.github.io/nfe/>
+원글(영어): <http://kangax.github.io/nfe/>
+한국어 번역: <http://Hyeong-jin.github.io/nfe/>
 
 TODO:
 
