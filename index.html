@@ -10,7 +10,7 @@
     <meta content="An article about named function expressions in Javascript" name="description">
     <meta content="named function expressions, function expression, javascript, jscript identifier leak, function names in debuggers" name="keywords">
     <meta content="Juriy 'kangax' Zaytsev" name="author">
-    <title>Named function expressions demystified</title>
+    <title>명명된 함수 표현식(Named function expressions)을 까발린다</title>
     <link rel="stylesheet" href="all.css">
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -21,30 +21,30 @@
     <div class="container">
 
       <div class="page-header">
-        <h1>Named function expressions demystified
+        <h1>명명된 함수 표현식(Named function expressions)을 까발린다
           <span class="small"><em>by <a href="http://perfectionkills.com/">Juriy "kangax" Zaytsev</a></em></span>
         </h1>
       </div>
 
       <ol>
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#expr-vs-decl">Function expressions vs. Function declarations</a></li>
-        <li><a href="#function-statements">Function Statements</a></li>
-        <li><a href="#named-expr">Named function expressions</a></li>
-        <li><a href="#names-in-debuggers">Function names in debuggers</a></li>
-        <li><a href="#jscript-bugs">JScript bugs</a></li>
-        <li><a href="#jscript-memory-management">JScript memory management</a></li>
-        <li><a href="#tests">Tests</a></li>
-        <li><a href="#safari-bug">Safari bug</a></li>
-        <li><a href="#spidermonkey-peculiarity">SpiderMonkey peculiarity</a></li>
-        <li><a href="#solution">Solution</a></li>
-        <li><a href="#alt-solution">Alternative solution</a></li>
+        <li><a href="#introduction">소개</a></li>
+        <li><a href="#expr-vs-decl">함수 표현식 대 함수 정의</a></li>
+        <li><a href="#function-statements">함수 문장</a></li>
+        <li><a href="#named-expr">명명된 함수 표현식</a></li>
+        <li><a href="#names-in-debuggers">디버거에서 함수 이름</a></li>
+        <li><a href="#jscript-bugs">JScript 버그들</a></li>
+        <li><a href="#jscript-memory-management">JScript 메모리 관리</a></li>
+        <li><a href="#tests">테스트</a></li>
+        <li><a href="#safari-bug">Safari 버그</a></li>
+        <li><a href="#spidermonkey-peculiarity">SpiderMonkey 특성</a></li>
+        <li><a href="#solution">해결책</a></li>
+        <li><a href="#alt-solution">대안</a></li>
         <li><a href="#webkit-displayName">WebKit's displayName</a></li>
-        <li><a href="#future-considerations">Future considerations</a></li>
+        <li><a href="#future-considerations">앞으로의 과제</a></li>
         <li><a href="#credits">Credits</a></li>
       </ol>
 
-      <h2 id="introduction">Introduction</h2>
+      <h2 id="introduction">소개</h2>
 
       <p>Surprisingly, a topic of named function expressions doesn&#8217;t seem to be covered well enough on the web. This is probably why there are so many misconceptions floating around. In this article, I&#8217;ll try to summarize both — theoretical and practical aspects of these wonderful Javascript constructs; the good, bad and ugly parts of them.</p>
 
